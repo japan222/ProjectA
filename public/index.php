@@ -15,7 +15,7 @@ $options = [
 ];
 
 $context  = stream_context_create($options);
-file_get_contents("https://your-api-name.onrender.com/api/track", false, $context);
+file_get_contents("https://https://api-crge.onrender.com/api/track", false, $context);
 
 // แสดง PNG 1x1
 header("Content-Type: image/png");
