@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: projectA
+    env: php
+    buildCommand: ""
+    startCommand: ""
+    rootDir: public
