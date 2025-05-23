@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Facebook Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '');
+    fbq('track', 'PageView');
+    </script>
+   
+    <!-- End Facebook Pixel Code -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jenny168x</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body><br>
+    <div class="container image-container">
+        <div class="logo">
+            <img src="images/logo.jpg" alt="Logo" width="100%">
+        </div>
+        <div class="buttons">
+            <a onclick="trackLead()" href="https://auto.jenny168.com/register/?code=iuYjqQcqv&openExternalBrowser=1"><button class="signup">สมัครสมาชิก</button></a>
+            <a onclick="trackLead()" href="https://lin.ee/s4zPO1z"><button class="contact">ติดต่อแอดมิน</button></a>
+        </div>
+        <img src="images/promo-1.jpg" alt="Main Image" class="">
+        <img src="images/promo-2.jpg" alt="Main Image" class="">
+        <img src="images/promo-3.jpg" alt="Main Image" class="">
+      </div>
+      <div class="" style="width: 700px;">
+        <div id="link-container"></div>
+      </div>
+
+    <script src="script3.js"></script>
+
+    <script>
+      function trackContact() {
+         fbq('track', 'Contact');
+      }
+</script>
+
+<script>
+      function trackCompleteRegistration() {
+         fbq('track', 'CompleteRegistration');
+      }
+</script>
+
+<script>
+      function trackSubscribe() {
+         fbq('track', 'Subscribe');
+      }
+</script>
+
+
+<script>
+      function trackPurchase() {
+         fbq('track', 'Purchase', {
+            value: 0.00, 
+            currency: 'THB' 
+         });
+      }
+</script>
+
+
+    <script>
+        function trackLead(){
+          fbq('track','Lead');
+        };
+        </script>
+        <script>
+          setTimeout(function(){ 
+            fbq('track', 'ViewContent'); 
+          }, 8000);
+        </script>
+</body>
+</html>
